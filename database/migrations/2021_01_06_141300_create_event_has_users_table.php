@@ -17,6 +17,7 @@ class CreateEventHasUsersTable extends Migration
             $table->id();
             $table->integer('user_id');
             $table->integer('event_id');
+            $table->integer('count')->default('1')->nullable();
             $table->timestamps();
         });
     }

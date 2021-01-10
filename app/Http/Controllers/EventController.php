@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Org;
 use Illuminate\Http\Request;
 use App\Models\Event;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class EventController extends Controller
@@ -92,4 +93,16 @@ class EventController extends Controller
         return view('home.event', compact('events'));
     }
 
+    public function viewVisitor($id)
+    {
+        $visitorDetail = DB::table('event_has_users')
+            ->join('users', 'event_has_users.user_id', '=', 'users.id')
+            ->join('events', 'event_has_users.event_id', '=', 'events.id')
+            ->where('event_id', $id)
+            ->select('users.lastname', 'users.email')
+            ->get();
+        $allVisitor = DB::table('event_has_users')->where('event_id', $id)->sum('count');
+        $event = Event::where('id', $id)->first();
+        return view('events.listallvisitor', compact('visitorDetail', 'allVisitor','event'));
+    }
 }

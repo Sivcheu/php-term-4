@@ -77,15 +77,6 @@
     </section>
 @endsection
 
-{{--Event-header--}}
-@section('event-header')
-    <div class="hero-image-2" style="background-image: url({{url('event.png')}})">
-        <div class="hero-text-2">
-            <h1 style="font-size: 80px; font-family: fantasy">Our Event</h1>
-        </div>
-    </div>
-@endsection
-
 {{--Event--}}
 @section('event')
     <section id="event">
@@ -105,6 +96,13 @@
                 </div>
             </div>
         @endif
+            <div class="d-flex justify-content-center">
+                <div class="header mt-5">
+                    <h2>
+                        Our Event
+                    </h2>
+                </div>
+            </div>
         @foreach($events as $event)
             @include('components.event_card')
         @endforeach

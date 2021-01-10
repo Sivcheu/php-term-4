@@ -14,7 +14,7 @@
 <style>
     body {
         background: white;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;

@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914a62f4-2ccd-4114-b748-0b10956930ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/events/listallvisitor.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DonationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DonationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventHasUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventHasUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_06_141300_create_event_has_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_06_141300_create_event_has_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_07_044700_create_volunteers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_07_044700_create_volunteers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +192,7 @@
       <workItem from="1610110580911" duration="1824000" />
       <workItem from="1610112539195" duration="2783000" />
       <workItem from="1610122589194" duration="680000" />
-      <workItem from="1610177883083" duration="937000" />
+      <workItem from="1610177883083" duration="9971000" />
     </task>
     <servers />
   </component>

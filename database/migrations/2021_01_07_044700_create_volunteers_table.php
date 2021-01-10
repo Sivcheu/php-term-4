@@ -18,6 +18,7 @@ class CreateVolunteersTable extends Migration
             $table->string('name');
             $table->string('phone_number');
             $table->integer('event_id')->nullable();
+            $table->integer('count')->default('1');
             $table->timestamps();
         });
     }
