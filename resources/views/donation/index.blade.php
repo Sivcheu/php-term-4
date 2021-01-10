@@ -2,6 +2,7 @@
 
 @section('content')
     <h1 class="text-center">List All Donors</h1>
+    <h6>Total Amount = {{$total}} $</h6>
     <table class="table">
         <thead>
         <tr>
@@ -9,7 +10,6 @@
             <th scope="col">DonorName</th>
             <th scope="col">Amount</th>
             <th scope="col">Organization</th>
-            <th scope="col">Total Amount = {{$total}} $</th>
         </tr>
         </thead>
         <tbody>

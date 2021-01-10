@@ -55,7 +55,7 @@ class DonationController extends Controller
             ->orderBy('org_id')
             ->get();
         $total = DB::table('donations')
-            ->sum('donations.qamount');
+            ->sum('donations.amount');
         return view('donation.index', compact('donors','total'));
     }
 

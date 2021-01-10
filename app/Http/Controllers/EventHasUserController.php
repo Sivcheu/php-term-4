@@ -44,4 +44,5 @@ class EventHasUserController extends Controller
     }
 
 
+
 }

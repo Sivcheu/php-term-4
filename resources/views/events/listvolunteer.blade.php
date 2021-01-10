@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="text-center">{{$event->title}}</h1>
-    <h6>All visitor {{$allVisitor}}</h6>
+    <h6>All visitor {{$allVolunteer}}</h6>
     <table class="table table-bordered">
         <thead>
         <tr>
@@ -11,10 +11,10 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($visitorDetail as $item)
+        @foreach($volunteerDetail as $item)
             <tr>
-                <td>{{$item->lastname}}</td>
-                <td>{{$item->email}}</td>
+                <td>{{$item->name}}</td>
+                <td>{{$item->phone_number}}</td>
             </tr>
         @endforeach
         </tbody>

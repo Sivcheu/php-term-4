@@ -26,7 +26,8 @@
                     <a href="/event-edit/{{$event->id}}" class="btn btn-warning">Edit</a>
                     <a href="/event-show/{{$event->id}}" class="btn btn-info">Detail</a>
                     <a href="/event-delete/{{$event->id}}" class="btn btn-danger">Delete</a>
-                    <a href="/event-visitor/{{$event->id}}" class="btn btn-info">All visitor</a>
+                    <a href="/event-visitor/{{$event->id}}" class="btn btn-primary">All visitor</a>
+                    <a href="/event-volunteer/{{$event->id}}" class="btn btn-primary">All Volunteer</a>
                 </td>
             </tr>
         @endforeach

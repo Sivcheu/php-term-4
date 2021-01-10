@@ -38,6 +38,7 @@ Route::post('/event-update', [\App\Http\Controllers\EventController::class, 'upd
 Route::get('/event-delete/{id}', [\App\Http\Controllers\EventController::class, 'destroy'])->middleware('adminAuth');
 Route::get('/userJoinEvent',[\App\Http\Controllers\EventHasUserController::class,'userJoinEvent'])->middleware('adminAuth');
 Route::get('/event-visitor/{id}',[\App\Http\Controllers\EventController::class,'viewVisitor']);
+Route::get('/event-volunteer/{id}',[\App\Http\Controllers\EventController::class,'volunteerInEvent']);
 
 Route::post('/test',[\App\Http\Controllers\EventHasUserController::class,'join'])->middleware("userAuth");
 //for user

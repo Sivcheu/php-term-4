@@ -41,7 +41,7 @@ class EventController extends Controller
             echo "Error";
         }
         $event->save();
-        return redirect('/event-index')->with('event', $event);
+        return redirect('/event-index');
 
     }
 
@@ -64,6 +64,7 @@ class EventController extends Controller
         $event->description = $request->description;
         $event->start = $request->start;
         $event->end = $request->end;
+
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $ext = $file->getClientOriginalExtension();
@@ -72,7 +73,7 @@ class EventController extends Controller
             $event->image = $filename;
         } else {
             return $request;
-            $add->image = '';
+            $event->image = '';
             echo "Error";
         }
         $event->save();
@@ -103,6 +104,20 @@ class EventController extends Controller
             ->get();
         $allVisitor = DB::table('event_has_users')->where('event_id', $id)->sum('count');
         $event = Event::where('id', $id)->first();
-        return view('events.listallvisitor', compact('visitorDetail', 'allVisitor','event'));
+        return view('events.listallvisitor', compact('visitorDetail', 'allVisitor', 'event'));
+    }
+
+    public function volunteerInEvent($id)
+    {
+        $volunteerDetail = DB::table('volunteers')
+            ->where('event_id', $id)
+            ->select('volunteers.name','volunteers.phone_number')
+            ->get();
+        $allVolunteer =  DB::table('volunteers')
+            ->where('event_id', $id)
+            ->sum('count');
+        $event = Event::where('id', $id)->first();
+        return view('events.listvolunteer',compact('allVolunteer','event','volunteerDetail'));
+
     }
 }
