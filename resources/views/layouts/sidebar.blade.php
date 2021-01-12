@@ -67,7 +67,7 @@
         <ul>
             <li>
                 <a href="/admin">
-                    <span>Home</span>
+                    <span>User</span>
                 </a>
             </li>
             <li>

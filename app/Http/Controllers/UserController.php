@@ -78,5 +78,4 @@ class UserController extends Controller
         return view('admin.listFeedback',compact('feedback'));
     }
 
-
 }

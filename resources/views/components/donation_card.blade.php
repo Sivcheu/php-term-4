@@ -5,9 +5,10 @@
         </h2>
     </div>
 </div>
+
 <div class="row shadow">
     @foreach($orgs as $org)
-        <div class="col-lg-4 col-md-6 col-xs-12 shadow-sm rounded">
+        <div class="col-lg-4 col-md-6 col-xs-12 ">
             <div class="p-3 text-center" style="width: auto; height: fit-content">
                 <img class="card-img-top cs-image mt-1" src="{{asset('image/'.$org->image)}}"
                      alt="Card image cap">
@@ -26,3 +27,4 @@
         </div>
     @endforeach
 </div>
+

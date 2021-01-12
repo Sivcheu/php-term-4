@@ -14,7 +14,8 @@ class AdminController extends Controller
 {
     public function admin()
     {
-        return view('admin.index');
+        $user = User::all();
+        return view('admin.index',compact('user'));
     }
 
     public function adminLoginForm()

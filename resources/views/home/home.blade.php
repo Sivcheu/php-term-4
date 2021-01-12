@@ -73,6 +73,7 @@
 {{--Donation--}}
 @section('ct')
     <section id="donation">
+
         @include('components.donation_card')
     </section>
 @endsection
@@ -80,6 +81,13 @@
 {{--Event--}}
 @section('event')
     <section id="event">
+        <div class="d-flex justify-content-center">
+            <div class="header mt-5">
+                <h2>
+                    Our Event
+                </h2>
+            </div>
+        </div>
         @if(\Illuminate\Support\Facades\Session::has('join'))
             <div class="container">
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -96,21 +104,17 @@
                 </div>
             </div>
         @endif
-            <div class="d-flex justify-content-center">
-                <div class="header mt-5">
-                    <h2>
-                        Our Event
-                    </h2>
-                </div>
-            </div>
-        @foreach($events as $event)
-            @include('components.event_card')
-        @endforeach
+            @foreach($events as $event)
+                @include('components.event_card')
+            @endforeach
+
     </section>
 
 @endsection
 {{--Footer--}}
 @section('footer')
-    {{\Illuminate\Support\Facades\View::make('footer')}}
+    <section id="foot">
+        {{\Illuminate\Support\Facades\View::make('footer')}}
+    </section>
 @endsection
 
