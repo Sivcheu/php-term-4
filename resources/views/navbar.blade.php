@@ -29,6 +29,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Logout</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{$name->firstname}}</a>
+                    </li>
                 @else
                     <li class="nav-item float-right pl-2 pr-2 ">
                         <a class="nav-link {{ Request::is('loginForm')? 'active' : ''}}"

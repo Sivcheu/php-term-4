@@ -77,5 +77,9 @@ class UserController extends Controller
         $feedback = Feedback::all();
         return view('admin.listFeedback',compact('feedback'));
     }
+    public function getName(Request $request){
+        $name = User::all();
+        return view('navbar',compact('name'));
+    }
 
 }
